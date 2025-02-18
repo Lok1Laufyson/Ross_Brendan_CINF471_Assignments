@@ -15,7 +15,7 @@ public class EnemyController : MonoBehaviour
     GameObject target;
     int routeIndex = 0;
 
-    float speed = 1f;
+    float speed = 5f;
 
     private State currentState = State.Pace;
 
