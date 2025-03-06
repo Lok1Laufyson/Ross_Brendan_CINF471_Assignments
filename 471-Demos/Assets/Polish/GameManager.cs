@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
@@ -12,5 +13,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void EndGame()
+    {
+        SceneManager.LoadScene("Polish_EndGame")
     }
 }
