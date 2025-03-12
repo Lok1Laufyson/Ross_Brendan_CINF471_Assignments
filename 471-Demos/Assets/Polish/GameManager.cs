@@ -17,6 +17,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     public void EndGame()
     {
-        SceneManager.LoadScene("Polish_EndGame")
+        SceneManager.LoadScene("Polish_EndGame");
     }
 }
