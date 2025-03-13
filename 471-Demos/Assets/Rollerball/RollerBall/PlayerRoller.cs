@@ -1,7 +1,7 @@
 using UnityEngine;
 
 // Controls player movement and rotation.
-public class PlayerController : MonoBehaviour
+public class PlayerRoller : MonoBehaviour
 {
     public float speed = 5.0f; // Set player's movement speed.
     public float rotationSpeed = 120.0f; // Set player's rotation speed.
