@@ -3,7 +3,8 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
-
+    public GameObject onCollectEffect;
+    
     private enum State
     {
         Pace,
@@ -22,7 +23,7 @@ public class EnemyController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+    
     }
 
     // Update is called once per frame
@@ -100,18 +101,32 @@ public class EnemyController : MonoBehaviour
 
         if (Physics.Raycast(transform.position, transform.forward, out hit, 10))
         { 
-         Player_State_Manager player = hit.transform.gameObject.GetComponent<Player_State_Manager>();
+         PlayerRoller player = hit.transform.gameObject.GetComponent<PlayerRoller>();
 
             if (player != null)
             {
-                if (player.currentState != player.sneakState)
-                {
+                //if (player.currentState != player.sneakState)
+                //{
                     print(hit.transform.gameObject.name);
                     return hit.transform.gameObject;
-                }
+                //}
             }
         }
 
         return null;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            // Destroy the collectible
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnDestroy()
+    {
+       
     }
 }
