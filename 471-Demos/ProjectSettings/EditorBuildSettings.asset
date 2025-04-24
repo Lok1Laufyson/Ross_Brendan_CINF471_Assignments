@@ -8,12 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/SimpleStateMachine/Scenes/Simple State Machine.unity
     guid: ad97c962086a53e4fa5de98934580278
-  - enabled: 1
+  - enabled: 0
     path: Assets/Polish/Scenes/Polish.unity
     guid: 9717bf814f41e704191d4517e2beda9f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Polish/Scenes/Win.unity
     guid: 45ed06a9ea167ca4a8915f161f660cbc
+  - enabled: 0
+    path: Assets/UI/UI.unity
+    guid: 568e338c16f8c204194ce8c41dc0fe88
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
